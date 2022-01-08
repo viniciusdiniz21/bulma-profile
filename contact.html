@@ -23,9 +23,9 @@
         <a id="taglink" class="navbar-item" href="contact.html">Contato</a>
         <input type="checkbox" name="checkbox" id="checkbox">
         <label for="checkbox" class="darkswitch">
-            <div class="switch"></div>
+          <div class="switch"></div>
         </label>
-        
+
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
@@ -82,7 +82,15 @@
       </div>
     </div>
   </section>
+  <script>
+    const checkbox_contact = document.querySelector('#checkbox')
 
+    checkbox_contact.addEventListener('change', () => {
+      let label = document.querySelectorAll('.label')
+      label[0].classList.toggle("darktitles")
+      label[1].classList.toggle("darktitles")
+    })
+  </script>
   <script src="./index.js"></script>
 </body>
 

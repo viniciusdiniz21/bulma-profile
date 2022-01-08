@@ -23,9 +23,9 @@
         <a id="taglink" class="navbar-item" href="contact.html">Contato</a>
         <input type="checkbox" name="checkbox" id="checkbox">
         <label for="checkbox" class="darkswitch">
-            <div class="switch"></div>
+          <div class="switch"></div>
         </label>
-        
+
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
@@ -68,8 +68,9 @@
               <bold>Sobre Mim</bold>
             </div>
             <hr>
-            <div class="content">Sou estudante de Sistemas de Informação na Universidade Federal de Uberlândia, 
-              atualmente cursando o segundo periodo. Além disso estudo desenvolvimento WEB, com JavaScript, TypeScript, React.JS,
+            <div class="content">Sou estudante de Sistemas de Informação na Universidade Federal de Uberlândia,
+              atualmente cursando o segundo periodo. Além disso estudo desenvolvimento WEB, com JavaScript, TypeScript,
+              React.JS,
               Node.JS e algumas outras tecnologias nas quais estou me aprimorando.
             </div>
           </div><!-- div sobre -->
@@ -79,7 +80,7 @@
               <bold>Experiência</bold>
             </div>
             <hr>
-            <div  class="content">
+            <div class="content">
               <div class="columns">
                 <div class="column is-3">
                   <figure class="image is-128x128">
@@ -88,9 +89,11 @@
                 </div>
                 <div class="column">
                   <div class="content">
-                    <div class="title" id="title">Auxiliar de Projetos<span class="tag is-dark is-small">M&A Engenharia</span>
+                    <div class="title" id="title">Auxiliar de Projetos<span class="tag is-dark is-small">M&A
+                        Engenharia</span>
                     </div>
-                    <div class="content">Responsável por fazer projetos industriais utilizando AutoCad para empresas como CBMM e Mosaic.
+                    <div class="content">Responsável por fazer projetos industriais utilizando AutoCad para empresas
+                      como CBMM e Mosaic.
                       Também era responsável por fazer TAG's para indentificação dos cabos de painéis de segurança.
                     </div>
                   </div>
@@ -98,31 +101,39 @@
               </div>
             </div>
             <!-- div exp -->
-          <div id="card" class="box">
-            <!-- div formação-->
-            <div class="content">
-              <div class="title" id="title">Curso Javascript Fullstack</div>
-              <hr>
-              <div class="content">
-                Curso no qual aprendi e desenvolvi boa parte de meus conhecimentos como desenvolvedor WEB.
-                Curso de duração média de 60 horas. Tecnologias apresentadas: HTML, CSS, JavaScript, TypeScript, React, Node, MongoDB, SASS.
-              </div>
-            </div>
-            <div class="content">
-              <div class="title" id="title">Sistemas de Informação - UFU</div>
-              <hr>
-              <div class="content">
-                <span>Atualmente cursando segundo período.</span>
-                Previsão para formação superior: 2024.
-              </div>
-            </div>
-          </div>
+            <div id="card" class="box">
               <!-- div formação-->
+              <div class="content">
+                <div class="title" id="title">Curso Javascript Fullstack</div>
+                <hr>
+                <div class="content">
+                  Curso no qual aprendi e desenvolvi boa parte de meus conhecimentos como desenvolvedor WEB.
+                  Curso de duração média de 60 horas. Tecnologias apresentadas: HTML, CSS, JavaScript, TypeScript,
+                  React, Node, MongoDB, SASS.
+                </div>
+              </div>
+              <div class="content">
+                <div class="title" id="title">Sistemas de Informação - UFU</div>
+                <hr>
+                <div class="content">
+                  <span>Atualmente cursando segundo período.</span>
+                  Previsão para formação superior: 2024.
+                </div>
+              </div>
+            </div>
+            <!-- div formação-->
+          </div>
         </div>
       </div>
-    </div>
   </section>
-  
+  <script>
+    const checkbox_index = document.querySelector('#checkbox')
+
+    checkbox_index.addEventListener('change', () => {
+      let bold = document.querySelector('bold')
+      bold.classList.toggle("darktitles")
+    })
+  </script>
   <script src="./index.js"></script>
 </body>
 
