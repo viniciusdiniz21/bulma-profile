@@ -1,22 +1,35 @@
-function darkTheme() {
+const checkbox = document.querySelector('#checkbox')
+console.log(checkbox)
+
+checkbox.addEventListener('change', () => {
     let body = document.querySelector('html')
-    body.classList.add("dark")
+    body.classList.toggle("dark")
+
     let header = document.querySelector('.navbar')
-    header.classList.add("dark")
+    header.classList.toggle("dark")
+
     let card = document.querySelector('#card')
-    card.classList.add("dark")
+    card.classList.toggle("dark")
+
     let box = document.querySelector('.box')
-    box.classList.add("dark")
+    box.classList.toggle("dark")
+
+    /* let content = document.querySelector("exp")
+    content.classList.toggle("dark") */
+
     let title = document.querySelector('.title')
-    title.classList.add("darktitles")
+    title.classList.toggle("darktitles")
+
     let label = document.querySelectorAll('.label')
-    label[0].classList.add("darktitles")
-    label[1].classList.add("darktitles")
+    label[0].classList.toggle("darktitles")
+    label[1].classList.toggle("darktitles")
+
     let links = document.querySelectorAll('#taglink')
-    links[0].classList.add("taglink")
-    links[1].classList.add("taglink")
+    links[0].classList.toggle("taglink")
+    links[1].classList.toggle("taglink")
+
     let p = document.querySelectorAll('p')
-    p.forEach((p)=>{
-      p.style.color = "#fff8dc"
+    p.forEach((p) => {
+        p.style.color = "#fff8dc"
     })
-  }
+})
