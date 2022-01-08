@@ -1,5 +1,4 @@
 const checkbox = document.querySelector('#checkbox')
-console.log(checkbox)
 
 checkbox.addEventListener('change', () => {
     let body = document.querySelector('html')
@@ -20,16 +19,16 @@ checkbox.addEventListener('change', () => {
     let title = document.querySelector('.title')
     title.classList.toggle("darktitles")
 
-    let label = document.querySelectorAll('.label')
+
+    /* let label = document.querySelectorAll('.label')
     label[0].classList.toggle("darktitles")
-    label[1].classList.toggle("darktitles")
+    label[1].classList.toggle("darktitles") */
 
     let links = document.querySelectorAll('#taglink')
     links[0].classList.toggle("taglink")
     links[1].classList.toggle("taglink")
 
     let p = document.querySelectorAll('p')
-    p.forEach((p) => {
-        p.style.color = "#fff8dc"
-    })
+    p[0].classList.toggle("taglink")
+    p[1].classList.toggle("taglink")
 })
