@@ -1,0 +1,40 @@
+#title{
+    font-size: 20px;
+}
+
+p{
+    font-size: small;
+}
+
+.taglink{
+    color: #fff8dc;
+}
+
+.me{
+    object-fit: cover;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox{
+    margin-top: 18px;
+    border-radius: 3;
+}
+
+.dark{
+    background-color: #323944;
+    color: white;
+}
+
+.darktitles{
+    color: #3eaca2;
+}
+
+
+
+
+
+
