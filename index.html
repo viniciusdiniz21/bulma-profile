@@ -129,12 +129,6 @@
   <script>
     const checkbox_index = document.querySelector('#checkbox')
 
-    let exp = document.querySelector('#exp')
-    exp.classList.toggle("dark")
-
-    let exp2 = document.querySelector('#exp2')
-    exp2.classList.toggle("dark")
-
     checkbox_index.addEventListener('change', () => {
       let bold = document.querySelectorAll('bold')
       bold[0].classList.toggle("darktitles")
@@ -142,6 +136,12 @@
       bold[2].classList.toggle("darktitles")
       bold[3].classList.toggle("darktitles")
       bold[4].classList.toggle("darktitles")
+
+      let exp = document.querySelector('#exp')
+      exp.classList.toggle("dark")
+
+      let exp2 = document.querySelector('#exp2')
+      exp2.classList.toggle("dark")
     })
   </script>
   <script src="./index.js"></script>
