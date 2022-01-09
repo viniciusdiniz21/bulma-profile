@@ -10,6 +10,7 @@ checkbox.addEventListener('change', () => {
     let card = document.querySelector('#card')
     card.classList.toggle("dark")
 
+
     let box = document.querySelector('.box')
     box.classList.toggle("dark")
 

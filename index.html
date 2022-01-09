@@ -74,7 +74,7 @@
               Node.JS e algumas outras tecnologias nas quais estou me aprimorando.
             </div>
           </div><!-- div sobre -->
-          <div id="card" class="box">
+          <div id="exp" class="box">
             <!-- div exp -->
             <div class="title" id="title">
               <bold>Experiência</bold>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="column">
                   <div class="content">
-                    <div class="title" id="title">Auxiliar de Projetos<span class="tag is-dark is-small">M&A
+                    <div class="title" id="title"><bold>Auxiliar de Projetos</bold><span class="tag is-dark is-small">M&A
                         Engenharia</span>
                     </div>
                     <div class="content">Responsável por fazer projetos industriais utilizando AutoCad para empresas
@@ -101,10 +101,10 @@
               </div>
             </div>
             <!-- div exp -->
-            <div id="card" class="box">
+            <div id="exp2" class="box">
               <!-- div formação-->
               <div class="content">
-                <div class="title" id="title">Curso Javascript Fullstack</div>
+                <div class="title" id="title"><bold>Curso Javascript Fullstack</bold></div>
                 <hr>
                 <div class="content">
                   Curso no qual aprendi e desenvolvi boa parte de meus conhecimentos como desenvolvedor WEB.
@@ -113,7 +113,7 @@
                 </div>
               </div>
               <div class="content">
-                <div class="title" id="title">Sistemas de Informação - UFU</div>
+                <div class="title" id="title"><bold>Sistemas de Informação - UFU</bold></div>
                 <hr>
                 <div class="content">
                   <span>Atualmente cursando segundo período.</span>
@@ -129,9 +129,19 @@
   <script>
     const checkbox_index = document.querySelector('#checkbox')
 
+    let exp = document.querySelector('#exp')
+    exp.classList.toggle("dark")
+
+    let exp2 = document.querySelector('#exp2')
+    exp2.classList.toggle("dark")
+
     checkbox_index.addEventListener('change', () => {
-      let bold = document.querySelector('bold')
-      bold.classList.toggle("darktitles")
+      let bold = document.querySelectorAll('bold')
+      bold[0].classList.toggle("darktitles")
+      bold[1].classList.toggle("darktitles")
+      bold[2].classList.toggle("darktitles")
+      bold[3].classList.toggle("darktitles")
+      bold[4].classList.toggle("darktitles")
     })
   </script>
   <script src="./index.js"></script>
